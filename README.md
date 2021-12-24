@@ -15,6 +15,8 @@ To reitterate from the project description - this means we are working in an env
 https://www.microsoft.com/en-ca/download/details.aspx?id=45520
 
 ## Usage
+### InvetoryDomain
+### InventoryLocal
 
 ## Logic
 It will systematically go through each joined computer and attempt to connect to them and determine if they are offline or attempt to connect to them by using PsExec by Windows Sysinternals and 
