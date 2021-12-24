@@ -44,8 +44,8 @@ function ForceManagement($Computer) {
   # Wait for a bit
   Start-Sleep -Seconds 10  
 }
-$inventoryreport='C:\Users\MFree\Desktop\InventoryReport.csv' #New-TemporaryFile
-$monitorinventory='c:\Users\MFree\Desktop\MonitorInventory.csv'
+$inventoryreport="$PsScriptRoot\InventoryReport.csv" #New-TemporaryFile
+$monitorinventory="$PsScriptRoot\MonitorInventory.csv"
 Add-Content $inventoryreport "Hostname,Manufacturer,Model,ServiceTag,CPU,RAM,DriveType,DriveSize,FormFactor,MouseCount,KeyboardCount,MonitorCount"
 Add-Content $monitorinventory "Manufacturer,Model,SerialNumber,Hostname"
 $DomainComputers = get-adcomputer -filter * | sort-object -property Name | ForEach-Object {$_.Name}
