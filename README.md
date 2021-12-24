@@ -5,12 +5,16 @@ Once the domain is polled for relevant system information including physical ver
 
 ## Table of Contents
 ## Scenario
-This framework is used in a predominately Windows Server/Window Desktop environment. It assumes that WinRM is installed on most computers in the domain. It assumes that no inventory of systems has taken place before and uses the domain controller as a source of truth for what computers are connected to the network.  
+This framework is used in a predominately Windows Server/Window Desktop environment. It presumes that WinRM is installed on most computers in the domain. Since no inventory of systems has taken place before,  it uses the domain controller as a source of truth for what computers are connected to the network. 
 
-If systems are re-purposed and given diffrent hostnames - it can be assumed there is bloat in the domain controller and therefore bloating group policies and that will need to be addressed outside of this framework.
+If systems are re-purposed and given diffrent hostnames - it can be assumed there is bloat in the domain controller and therefore bloating group policies and that will need to be addressed outside of this framework.  This could be considered a security risk but also someting that can degrade the performance of your Window Server environment and other connected systems.
 
 ## Requirements
 https://www.microsoft.com/en-ca/download/details.aspx?id=45520
+
 ## Usage
+
 ## Logic
+It will systematically go through each joined computer and attempt to connect to them and determine if they are offline or attempt to connect to them by using PsExec by Windows Sysinternals and 
+
 ## Credits
