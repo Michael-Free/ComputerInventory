@@ -7,7 +7,7 @@ Once the domain is polled for relevant system information including physical ver
 ## Scenario
 This framework is used in a predominately Windows Server/Window Desktop environment. It presumes that WinRM is installed on most computers in the domain. Since no inventory of systems has taken place before,  it uses the domain controller as a source of truth for what computers are connected to the network. 
 
-If systems are re-purposed and given diffrent hostnames - it can be assumed there is bloat in the domain controller and therefore bloating group policies and that will need to be addressed outside of this framework.  This could be considered a security risk but also someting that can degrade the performance of your Window Server environment and other connected systems.
+If systems are re-purposed and given diffrent hostnames - it can be assumed there is bad entries in the domain controller and therefore bloating group policies and that will need to be addressed outside of this framework.  This could be considered a security risk but also someting that can degrade the performance of your Window Server environment and other connected systems.
 
 To reitterate from the project description - this means we are working in an environment where no inventory controls have ever taken place before.
 
