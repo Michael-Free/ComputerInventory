@@ -5,6 +5,10 @@ Once the domain is polled for relevant system information including physical ver
 
 ## Table of Contents
 ## Scenario
+This framework is used in a predominately Windows Server/Window Desktop environment. It assumes that WinRM is installed on most computers in the domain. It assumes that no inventory of systems has taken place before and uses the domain controller as a source of truth for what computers are connected to the network.  
+
+If systems are re-purposed and given diffrent hostnames - it can be assumed there is bloat in the domain controller and therefore bloating group policies and that will need to be addressed outside of this framework.
+
 ## Requirements
 https://www.microsoft.com/en-ca/download/details.aspx?id=45520
 ## Usage
