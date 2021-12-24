@@ -9,6 +9,8 @@ This framework is used in a predominately Windows Server/Window Desktop environm
 
 If systems are re-purposed and given diffrent hostnames - it can be assumed there is bloat in the domain controller and therefore bloating group policies and that will need to be addressed outside of this framework.  This could be considered a security risk but also someting that can degrade the performance of your Window Server environment and other connected systems.
 
+To reitterate from the project description - this means we are working in an environment where no inventory controls have ever taken place before.
+
 ## Requirements
 https://www.microsoft.com/en-ca/download/details.aspx?id=45520
 
