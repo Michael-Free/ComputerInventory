@@ -19,7 +19,7 @@ Ideally Windows Remote Management (WinRM) should be enabled on all computers in 
 
 PsExec.exe will need to be downloaded and placed in the InventoryDomain directory since the licensing for it doesn't allow for distribution of it from any other vendor than Microsoft. https://docs.microsoft.com/en-us/sysinternals/downloads/psexec 
 
-Other than the above requirements, we'll only need to make sure we're running a modern Powershell version (ideally v4+).
+Other than the above requirements, we'll only need to make sure we're running a modern Powershell version (ideally v4+). `Get-Monitor.ps1` is not written by me, it was obtained from here: https://github.com/MaxAnderson95/Get-Monitor-Information/blob/master/Get-Monitor.ps1
 
 ### InventoryLocal
 InventoryLocal has significantly less requirements.  All that is required is a modern Powershell version (ideally v4+). No network connection is even needed, as it will poll the computer for relevant inventory information.
