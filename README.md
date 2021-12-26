@@ -22,12 +22,6 @@ PsExec.exe will need to be downloaded and placed in the InventoryDomain director
 Other than the above requirements, we'll only need to make sure we're running a modern Powershell version (ideally v4+). `Get-Monitor.ps1` is not written by me, it was obtained from here: https://github.com/MaxAnderson95/Get-Monitor-Information/blob/master/Get-Monitor.ps1
 
 ### InventoryLocal
-InventoryLocal has significantly less requirements.  All that is required is a modern Powershell version (ideally v4+). No network connection is even needed, as it will poll the computer for relevant inventory information.
-
-## Information Collected
-
-### InvetoryDomain
-
-### InventoryLocal
+InventoryLocal has significantly less requirements.  All that is required is a modern Powershell version (ideally v4+). No network connection is even needed, as it will poll the computer for relevant inventory information. Ideally the InventoryLocal directory is copied to a USB drive, and `runme.bat` is executed, and system information is collected and written to a csv file.
 
 
